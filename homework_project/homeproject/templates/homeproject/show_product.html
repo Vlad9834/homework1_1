@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "homeproject/base.html" %}
+{% block content %}
 <h1>Описание выбранной модели</h1>
-{{car.brand}}
 <br>
 {{car.model}}
 <br>
 {{car.price}}
 <br>
+{% endblock %}
 
-</body>
-</html>

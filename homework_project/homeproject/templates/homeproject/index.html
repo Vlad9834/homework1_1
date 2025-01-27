@@ -1,11 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "homeproject/base.html" %}
+{% block content %}
 <h1>Главная страница</h1>
-<a href="{% url 'shop' %}">Наш магазин</a>
-</body>
-</html>
+{% endblock %}
+
+<!--<a href="{% url 'shop' %}">Наш магазин</a>-->
+<!--<a href="{% url 'add_car' %}">Добавить авто</a>-->
+<!--<a href="{% url 'contacts' %}">О нас</a>-->
+<!--<a href="{% url 'login' %}">логин</a>-->

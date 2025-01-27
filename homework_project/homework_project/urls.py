@@ -23,5 +23,8 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("",views.index),
     path("shop/",views.products, name="shop"),
-    path("cars/<int:car_id>",views.show_product, name="show_product"),
+    path("cars/<int:car_id>/",views.show_product, name="show_product"),
+    path("add-car/",views.add_car, name="add_car"),
+    path("contacts/",views.contacts, name="contacts"),
+    path("login/",views.login, name="login"),
 ]

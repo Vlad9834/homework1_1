@@ -1,16 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "homeproject/base.html" %}
+{% block content %}
+
 <h1>Каталог</h1>
 {% for car in cars %}
 <a href=" {% url 'show_product' car.id %} ">{{car.brand}} - {{car.model}}</a>
 
 <br>
 {% endfor %}
-
-</body>
-</html>
+{% endblock %}
